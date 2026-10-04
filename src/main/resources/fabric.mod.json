@@ -1,0 +1,25 @@
+﻿{
+  "schemaVersion": 1,
+  "id": "bossmod",
+  "name": "Mutated Bosses Mod",
+  "version": "${version}",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.bossmod.BossMod"
+    ],
+    "client": [
+      "com.example.bossmod.BossModClient"
+    ]
+  },
+  "mixins": [
+    "bossmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*",
+    "geckolib": "*"
+  }
+}
